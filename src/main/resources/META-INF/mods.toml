@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "GPL-3.0-or-later"
+
+[[mods]]
+modId = "catnipfix"
+version = "1.0.0"
+displayName = "Catnip Fix"
+logoFile="icon.png"
+authors="MausKaffee34767"
+description = """This mod fixes some crashes when using Create (really Ponder, which is a component included in Create)
+
+The names comes from the class this mod modifies, specifically net.createmod.**catnip**.render.StitchedSprite
+The icon is a modified (resized) version of [this](https://commons.wikimedia.org/wiki/File:Catnip_flowers.jpg) image (Credits: D. Gordon E. Robertson, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons) with the text "FIX" added
+"""
+
+[[dependencies.catnipfix]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.catnipfix]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.catnipfix]]
+modId = "ponder"
+mandatory = true
+versionRange = "[0.8,)"
+ordering = "BEFORE"
+side = "BOTH"
